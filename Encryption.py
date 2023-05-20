@@ -5,7 +5,7 @@ def generatePass(length):
     characters = list(map(chr, range(65, 123)))
     newPas = ''
     l = 1
-    if(length < len(characters)):
+    if(length < len(characters) and length < 10):
         l = length
     else:
         l = len(characters)
