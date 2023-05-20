@@ -8,7 +8,7 @@ def generatePass(length):
     if(length < len(characters) and length < 10):
         l = length
     else:
-        l = len(characters)
+        l = 9
     for i in range(l):
         n = random.randint(0, len(characters) - 1)
         newPas += characters[n]
